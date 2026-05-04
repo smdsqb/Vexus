@@ -1,0 +1,25 @@
+.ticker {
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 11px 0;
+  background: var(--s1);
+}
+
+.track {
+  display: inline-flex;
+  animation: tick 26s linear infinite;
+}
+
+.item {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 28px;
+}
+
+.sep {
+  color: var(--accent);
+  margin-left: 28px;
+}
