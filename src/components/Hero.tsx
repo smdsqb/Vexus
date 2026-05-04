@@ -1,5 +1,5 @@
 import Link from "next/link";
-import JacketSVG from "./favicon.svg";
+import JacketSVG from "./JacketSVG";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
