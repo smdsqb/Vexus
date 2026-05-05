@@ -1,0 +1,243 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 52px;
+  border-bottom: 1px solid var(--border);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: var(--text);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 120px);
+  border-bottom: 1px solid var(--border);
+}
+
+.imagePanel {
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrap {
+  flex: 1;
+  background: var(--s1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  font-weight: 500;
+}
+
+.badgeRed    { background: var(--red); color: #fff; }
+.badgeOutline{ border: 1px solid var(--border2); color: var(--muted2); }
+.badgeGold   { border: 1px solid var(--accent); color: var(--accent); }
+
+.ghostNum {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+  font-family: var(--serif);
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.imageMeta {
+  padding: 14px 24px;
+  border-top: 1px solid var(--border);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.details {
+  padding: 64px 52px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.price {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.priceSub {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--muted2);
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  max-width: 440px;
+}
+
+.sizeSection {
+  margin-bottom: 32px;
+}
+
+.sizeLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.sizes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sizeBtn {
+  min-width: 48px;
+  height: 44px;
+  border: 1px solid var(--border2);
+  background: none;
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: var(--body);
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0 12px;
+}
+
+.sizeBtn:hover {
+  background: var(--s2);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.addBtn {
+  width: 100%;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-bottom: 40px;
+}
+
+.addBtn:hover {
+  opacity: 0.82;
+}
+
+.infoStrips {
+  border-top: 1px solid var(--border);
+}
+
+.strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+}
+
+.stripLabel {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.stripVal {
+  font-size: 12px;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 12px 20px;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .imagePanel {
+    border-right: none;
+  }
+
+  .details {
+    padding: 40px 20px;
+  }
+}
