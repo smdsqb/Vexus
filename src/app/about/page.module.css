@@ -1,0 +1,361 @@
+.header {
+  padding: 64px 52px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Story */
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 52px;
+  gap: 80px;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.storyLeft {
+  position: sticky;
+  top: 80px;
+}
+
+.storyQuote {
+  font-family: var(--serif);
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.92;
+  color: var(--text);
+}
+
+.storyQuote em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--muted);
+}
+
+.storyRight {
+  border-left: 1px solid var(--border);
+  padding-left: 80px;
+}
+
+.storyText {
+  font-size: 13px;
+  color: var(--muted2);
+  line-height: 2;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+/* Values */
+.values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--border);
+  background: var(--s1);
+}
+
+.valueCard {
+  padding: 40px 32px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.valueCard:last-child {
+  border-right: none;
+}
+
+.valueNum {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.valueTitle {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.valueDesc {
+  font-size: 12px;
+  color: var(--muted2);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Sizing */
+.sizing {
+  border-bottom: 1px solid var(--border);
+}
+
+.sizeHeader {
+  padding: 56px 52px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sizeTable {
+  padding: 0 52px;
+}
+
+.sizeRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+  gap: 16px;
+}
+
+.sizeRow span {
+  font-size: 12px;
+  color: var(--muted2);
+  letter-spacing: 0.08em;
+}
+
+.sizeRowHead span {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sizeNote {
+  padding: 20px 52px 40px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+/* Shipping */
+.shipping {
+  border-bottom: 1px solid var(--border);
+}
+
+.shippingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shippingCard {
+  padding: 56px 52px;
+  border-right: 1px solid var(--border);
+}
+
+.shippingCard:last-child {
+  border-right: none;
+}
+
+.shippingDetails {
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.shippingRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 20px;
+}
+
+.shippingMarket {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.shippingInfo {
+  font-size: 12px;
+  color: var(--muted2);
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.shippingText {
+  font-size: 13px;
+  color: var(--muted2);
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  max-width: 400px;
+}
+
+/* FAQ */
+.faq {
+  border-bottom: 1px solid var(--border);
+}
+
+.faqHeader {
+  padding: 56px 52px 0;
+}
+
+.faqList {
+  padding: 40px 52px 56px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+.faqItem {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQ {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.faqA {
+  font-size: 13px;
+  color: var(--muted2);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Contact */
+.contact {
+  padding: 72px 52px;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.contactLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.contactLink:hover {
+  opacity: 0.7;
+}
+
+.contactType {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contactVal {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.06em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .valueCard:nth-child(2) {
+    border-right: none;
+  }
+
+  .valueCard:nth-child(3) {
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 48px 20px 32px;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+    gap: 40px;
+  }
+
+  .storyLeft {
+    position: static;
+  }
+
+  .storyRight {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  .valueCard {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sizeHeader, .sizeTable, .sizeNote {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .shippingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .shippingCard {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 40px 20px;
+  }
+
+  .faqHeader {
+    padding: 40px 20px 0;
+  }
+
+  .faqList {
+    padding: 32px 20px 40px;
+  }
+
+  .faqItem {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+    gap: 40px;
+  }
+}
